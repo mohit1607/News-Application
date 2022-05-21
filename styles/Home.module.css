@@ -1,0 +1,86 @@
+.nav{
+    display: flex;
+    padding: 2rem;
+    position: sticky;
+    /* position: sticky;  these tow are the keword for position sticky */
+    top: 0;
+    background: white;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.input{
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid black;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+}
+.brand{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.button{
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    border-radius: 30px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.welcome{
+    height:70vh;
+    display: flex;
+    font-size: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card{
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+    background-color: #e4e4f7;
+    margin: 1rem;
+    margin-inline: 2.7rem;
+    padding-top: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imageDiv{
+    width: 95%;
+    height: 50%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.span{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.newsPage{
+    display: flex;
+    flex-wrap: wrap;
+}

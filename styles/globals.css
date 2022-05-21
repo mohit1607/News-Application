@@ -1,0 +1,53 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.thisImage{
+  width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.4s ease-in;
+}
+
+.thisImage:hover{
+  transform: scale(1.3);
+}
+
+.cardText{
+  margin-inline: 0.5rem;
+  height: 50%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading{
+  font-size: 32px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.code{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.codeheading{
+  margin-bottom: 3rem;
+}
