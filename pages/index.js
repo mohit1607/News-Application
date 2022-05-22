@@ -18,7 +18,7 @@ export default function Home({data}) {
 
     </div>
     <div>
-          <h1 className="heading">Top Techcrunch Headlines!</h1>
+          <h1 className="heading">General news</h1>
         </div>
         <div className={styles.newsPage}>
             { // here you always have to check if the array exist by optional chaining

@@ -8,7 +8,6 @@ import newsIcon from '../public/icons8-news.svg'
 
 export default function Navbar()  {
 
-    const [search, setSearch] = useState(false)
 
     return(
         <nav className={styles.nav}>
@@ -29,15 +28,6 @@ export default function Navbar()  {
             <Link href="/sports">
             <a>Sports</a>
             </Link>
-            {
-                search ?  <input type="text" placeholder='search' autoFocus className={styles.input}
-                onKeyPress={(e) => {
-                    if(e.key === 'Enter'){
-                        setSearch(false)
-                    }
-                }} />
-                : <button className={styles.button} onClick={()=> {setSearch(true)}}>Search</button>
-            }
            </div>
         </nav>
     )

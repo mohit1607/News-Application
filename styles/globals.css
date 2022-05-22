@@ -22,9 +22,6 @@ a {
     transition: all 0.4s ease-in;
 }
 
-.container2 {
-  position: fixed;
-}
 
 .thisImage:hover{
   transform: scale(1.3);

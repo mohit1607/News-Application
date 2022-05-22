@@ -10,7 +10,7 @@
 }
 
 .container{
-    height: 80vh;
+    height: 50vh;
 }
 
 .links{
@@ -53,13 +53,13 @@
 
 @keyframes animationth {
     from{
-        font-size: 28px;
+        transform: scaleX(1);
     }
     50%{
-        font-size: 36px;
+        transform: scaleX(1.3);
     }
     to{
-        font-size: 28px;
+        transform: scaleX(1);
     }
 }
 .welcome{
@@ -69,6 +69,7 @@
     align-items: center;
     transition: 0.4s all;
     justify-content: center;
+    animation: animationth 3s infinite;
 }
 
 .Card{
