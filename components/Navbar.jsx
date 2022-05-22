@@ -21,13 +21,13 @@ export default function Navbar()  {
             <a>Home</a>
             </Link>
             <Link href="/news">
-            <a>News</a>
+            <a>Technology</a>
             </Link>
-            <Link href="#">
-            <a>Code</a>
+            <Link href="/business">
+            <a>Business</a>
             </Link>
-            <Link href="#">
-            <a>More</a>
+            <Link href="/sports">
+            <a>Sports</a>
             </Link>
             {
                 search ?  <input type="text" placeholder='search' autoFocus className={styles.input}

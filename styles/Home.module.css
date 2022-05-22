@@ -9,6 +9,10 @@
     justify-content: space-between;
 }
 
+.container{
+    height: 80vh;
+}
+
 .links{
     display: flex;
     justify-content: space-between;
@@ -46,11 +50,24 @@
 .button:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
+
+@keyframes animationth {
+    from{
+        font-size: 28px;
+    }
+    50%{
+        font-size: 36px;
+    }
+    to{
+        font-size: 28px;
+    }
+}
 .welcome{
     height:70vh;
     display: flex;
     font-size: 34px;
     align-items: center;
+    transition: 0.4s all;
     justify-content: center;
 }
 

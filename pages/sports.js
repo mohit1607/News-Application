@@ -1,15 +1,14 @@
-import getLayout from '../components/getLayoutFun'
 import styles from '../styles/Home.module.css'
 import Card from '../components/Card'
-import { useEffect } from 'react'
+import getLayout from '../components/getLayoutFun'
 
 
-export default function news({data}) {
+export default function sports({data}) {
 
     return (
         <>
         <div>
-            <h1 className="heading">Top Techcrunch Headlines!</h1>
+            <h1 className="heading">Top Sports Headlines!</h1>
         </div>
         <div className={styles.newsPage}>
             { // here you always have to check if the array exist by optional chaining
@@ -27,7 +26,7 @@ export default function news({data}) {
 }
 
 export async function getStaticProps() {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${process.env.NEWS_API_KEY}`)
+    const response = await fetch(`https://newsapi.org/v2/top-headlines?category=sports&country=in&apiKey=${process.env.NEWS_API_KEY}`)
     const data = await response.json() // by default Article length is 104
     // const articles =  data.articles;
 
@@ -38,4 +37,4 @@ export async function getStaticProps() {
     }
 }
 
-news.getLayout = getLayout
+sports.getLayout = getLayout
